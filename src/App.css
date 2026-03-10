@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #c5d5e1;
+  color: #1f2937;
+}
+
+.container{
+  width:100%;
+  max-width:1280px;
+  margin:auto;
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+h1{
+  text-align:left;
+  font-size:46px;
+  font-weight:600;
+  color:#273a50;
+}
+.summary h3,
+.converter h3,
+.list h3{
+color:#567c8d;
+}
+/* Global Card Style */
+.card-panel,
+.list,
+.summary,
+.converter{
+width:100%;
+background:#f5efeb;
+padding:24px;
+border-radius:16px;
+box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+
+.converter h3{
+font-size:18px;
+margin-bottom:4px;
+}
+
+.summary{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+.summary h4{
+font-size:14px;
+margin-top:14px;
+margin-bottom:8px;
+color:#273f4b !important;
+font-weight:600;
+
+font-size:14px !important;
+
+}
+.converter{
+background:#f5efeb;
+padding:24px;
+border-radius:16px;
+box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+/* Main Grid: List (big) + Sidebar (small) */
+.main-layout{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap:28px;
+  align-items:start;
+}
+/* Sidebar stack */
+.sidebar{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* Form Grid */
+form{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr auto;
+  gap:16px;
+}
+
+input,
+select {
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  background: #2f4156;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* Expense Item Card */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Category Tag */
+.badge {
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+/* Summary Panel */
+.total{
+font-size:26px;
+font-weight:500;
+color:#567c8d;
+letter-spacing:1px;
+}
+/* Converter */
+.converter p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+.container{
+padding:20px;
+}
+
+.main-layout{
+grid-template-columns:1fr;
+}
+
+form{
+grid-template-columns:1fr;
+}
+.summary h3{
+font-size:18px;
+margin-bottom:6px;
+
+}
+
+}
+.summary-box{
+background:#eef2ff;
+border-radius:12px;
+padding:20px;
+font-size:18px;
+font-weight:600;
+border:1px solid #bcbfcb;
+margin-bottom:6px;
+}
+.category-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#f8fafc;
+padding:12px 14px;
+border-radius:8px;
+margin-top:8px;
+font-size:14px;
+border:1px solid #e5e7eb;
+}
+.convert-result{
+margin-top:14px;
+background:#eef2ff;
+padding:20px;
+border-radius:12px;
+border:1px solid #c7d2fe;
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+.convert-title{
+font-size:13px;
+color:#6b7280;
+}
+.convert-value{
+font-size:34px;
+font-weight:800;
+color:#567c8d;
+margin-top:4px;
+}
+.convert-rate{
+font-size:12px;
+color:#6b7280;
+}
+.converter p{
+font-size:13px;
+color:#000716;
+margin-top:6px;
+}
+.list h2,
+.list h3{
+color:#567c8d;
+
+}h2,h3,h4{
+color:#1b3e4e !important;
+font-size: 24px !important;
+}
+.summary-box span{
+color:#567c8d;
+}
+.summary h4{
+font-size:12px;
+}
+.summary-count{
+font-size:13px;
+color: #000;;
+}
