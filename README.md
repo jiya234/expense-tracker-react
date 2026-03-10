@@ -33,5 +33,11 @@ The app is fully responsive and works on both **desktop** and **mobile** devices
 ## How to Run Locally
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/expense-tracker.git
+  git clone https://github.com/yourusername/expense-tracker.git
+2.Install dependencies:
+  npm install
+3.Run the development server:
+  npm run dev
+4.Build for production:
+  npm run build
+
